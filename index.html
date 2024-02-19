@@ -1,9 +1,214 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>
-Khushboo Kamra</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello ! Welcome to my Website</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    body {
+        background-color: #130c36;
+        color: #fff;
+        font-family: "popins", sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        height: 70px;
+        background-color: rgb(250, 13, 65);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 30px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    nav ul li a:hover {
+        color: #101617;
+        font-weight: bold;
+    }
+
+    .left {
+        font-size: 25px;
+    }
+
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+
+    .leftsection {
+        width: 30%;
+        padding: 30px;
+        margin-left: 5%;
+    }
+
+    .leftsection img {
+        margin-left: 20px;
+    }
+
+    .rightsection {
+        width: 90%;
+        padding: 150px;
+        font-size: 40px;
+        align-items: center;
+    }
+
+    .wraptextforstyling {
+        color: rgb(232, 235, 33);
+        font-weight: bold;
+    }
+
+    #element {
+        color: rgb(232, 235, 33);
+    }
+
+    .secondsection {
+        width: 90%;
+        margin: auto;
+    }
+
+    .secondsection p {
+        text-align: left;
+        margin-top: 30px;
+        color: rgb(0, 234, 145);
+    }
+
+    .secondsection h4 {
+        margin-top: 50px;
+        color: rgb(236, 215, 188);
+    }
+
+    .secondsection h2 {
+        margin-top: 10px;
+        color: rgb(255, 247, 237);
+    }
+
+    footer {
+        background-color: #0d0821;
+        color: #fff;
+        padding: 20px;
+        bottom: 0;
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer ul {
+        list-style: none;
+    }
+
+    .footer ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+    }
+
+    .footer ul li a:hover{
+        color: #16aa9e;
+    }
+
+    
+</style>
+
 <body>
-<h1>Hello ! Welcome to my Website</h1>
+    <header>
+        <nav>
+            <div class="left">Khushboo's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-us">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <img src="wd2.png" width="400" height="400">
+            </div>
+            <div class="rightsection">
+                Hi, I'm <span class="wraptextforstyling">Khushboo</span> an enthusiastic <span id="element"></span>
+            </div>
+        </section>
+        <div class="secondsection">
+            <hr>
+            <h2 style="margin-top: 50px" id="about-us">About Me</h2>
+            <p> I am Khushboo, a BCA student at Vivekananda Institute Of Professional Studies.
+                I am learning frontend technologies, including HTML, CSS, JavaScript.
+                My passion for technology drives me to continuously improve my skills.
+                I am also learning backend technologies like Node.js, Express.js, and MongoDB.
+                I am also learning to use tools like Git, GitHub, and Heroku.
+                As a computer science student, I strive to stay up-to-date with emerging technologies.
+                I thoroughly enjoy the process of coding and find immense satisfaction in it.</p>
+        
+
+            <h4>What skills I have </h4>
+            <h2>My experience</h2>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer" id="contact">
+            <div class="first-footer">
+                <h3>Khushboo's Developer Portfolio</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li> <a href="https://github.com/khushboo1189">GitHub</a></li>
+                    <li> <a href="https://www.linkedin.com/in/khushboo1189/">LinkedIn</a></li>
+                    <li> <a href=""> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li>+91 9319xxxx27</li>
+                    <li>khushbookamra8@gmail.com</li>
+                    <li>www.khushbooportfolio.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Graphics Designer.', 'UI/UX Designer.', 'Influencer.'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
 </body>
+
 </html>
